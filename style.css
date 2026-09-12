@@ -1,0 +1,124 @@
+/* Configuração geral da página */
+*{
+    margin 0;
+    padding: 0;
+    box-sizing: border-box;    
+}                          
+/*Estilo de corpo da página*/
+body{
+    font-family: Ariel, sans-serif;
+    background-color:aquamarine;
+    color:black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color:blue
+    margin-bottom: 25px;
+}
+
+form{
+    background: white;
+    padding: 30px;
+    border-radius:15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+}
+
+label{
+    display:block;
+    margin-bottom: 7px;
+    color: blueviolet;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus{
+    border-color: burlywood;
+    box-shadow: 0 0 0 2px rgba(29,53,87,0.15);
+}
+/*Estilo de botão*/
+button{
+    width: 100%;
+    padding: 13px;
+    border:none;
+    border-radius: 8px;
+    background: rgb(110, 105, 116);
+    color:coral;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.2s;
+}
+/*Muda a cor do botão quando passa o mouse*/
+button:hover{
+    background: rgb(29, 53, 87);
+    color: white;
+}
+/*Mensagem de erro*/
+#mensagem{
+    margin-top:15px;
+    text-align:center;
+    color: red;
+    font-weight: bold;
+}
+/*Estilo de área de resultado*/
+#resultado{
+   background: skyblue;
+   padding: 25px;
+    border-radius: 15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.10);
+    margin-bottom: 15px;
+}
+/*Espaçamento entre as informações do resultado*/ 
+#resultado p{
+    padding:9px 0;
+    border-bottom: 1px solid #ccc;
+}
+/*Cor dos títulos das informações*/
+#resultado p strong{
+    color: blueviolet;
+}
+/*Estilo dos links*/
+a{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#linkMaps:hover{
+    background: salmon;
+    text-decoration: none;
+}
+@media (max-width: 360px){
+    body{
+        padding: 12px;
+    }
+    form{
+    #resultado{
+        padding: 20px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    input, button{
+        font-size: 15px;
+    }
+}
+}
