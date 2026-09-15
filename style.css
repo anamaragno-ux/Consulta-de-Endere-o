@@ -1,13 +1,13 @@
 /* Configuração geral da página */
 *{
-    margin 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;    
 }                          
 /*Estilo de corpo da página*/
 body{
     font-family: Ariel, sans-serif;
-    background-color:aquamarine;
+    background-color:hsl(167, 37%, 66%);
     color:black;
     min-height: 100vh;
     display: flex;
@@ -15,24 +15,28 @@ body{
     align-items: center;
     padding: 20px;
 }
-
+main{
+    max-width: 420px;
+    width: 100%;
+}
+/*Estilo do título da página*/
 h1{
     text-align: center;
-    color:blue
-    margin-bottom: 25px;
+    color:rgb(0, 0, 0);
+    margin:0 0 20px;
 }
-
+/*Estilo do formulário*/
 form{
-    background: white;
+    background: hsl(0, 0%, 100%);
     padding: 30px;
     border-radius:15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.10);
 }
-
+/*Estilo dos rótulos dos campos do formulário*/
 label{
     display:block;
     margin-bottom: 7px;
-    color: blueviolet;
+    color: rgb(0, 0, 0);
 }
 
 input{
@@ -56,7 +60,7 @@ button{
     border:none;
     border-radius: 8px;
     background: rgb(110, 105, 116);
-    color:coral;
+    color:rgb(255, 255, 255);
     font-size:16px;
     font-weight: bold;
     cursor:pointer;
@@ -76,7 +80,7 @@ button:hover{
 }
 /*Estilo de área de resultado*/
 #resultado{
-   background: skyblue;
+   background: rgb(255, 255, 255);
    padding: 25px;
     border-radius: 15px;
     box-shadow:0 4px 15px rgba(0,0,0,0.10);
@@ -89,36 +93,20 @@ button:hover{
 }
 /*Cor dos títulos das informações*/
 #resultado p strong{
-    color: blueviolet;
+    color: rgb(0, 0, 0);
 }
 /*Estilo dos links*/
 a{
     display: block;
     text-align: center;
     margin-top: 15px;
-    color: blueviolet;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
 }
 #linkMaps:hover{
-    background: salmon;
+    background: rgb(243, 243, 243);
     text-decoration: none;
-}
-@media (max-width: 360px){
-    body{
-        padding: 12px;
-    }
-    form{
-    #resultado{
-        padding: 20px;
-    }
-    h1{
-        font-size: 24px;
-    }
-    input, button{
-        font-size: 15px;
-    }
-}
 }
